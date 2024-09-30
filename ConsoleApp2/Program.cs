@@ -55,28 +55,66 @@
 //    Console.ResetColor();
 //}
 
-Console.Write("Eneter you price:");
-double price =double.Parse(Console.ReadLine());
+//Console.Write("Eneter you price:");
+//double price =double.Parse(Console.ReadLine());
 
-if (price >= 1000 && price <= 5000) 
+//if (price >= 1000 && price <= 5000) 
+//{
+//    Console.ForegroundColor= ConsoleColor.Green;
+//    Console.WriteLine("Discounted price:10%");
+//    double price1 = price - price * (10 / 100.0);
+//    Console.Write($"Result: {price1} ");
+//   Console.ResetColor();
+//}
+//if (price >= 5000)
+//{
+//    Console.ForegroundColor = ConsoleColor.Green;
+//    Console.WriteLine("Discounted price:25%");
+//    double price1 = price - price * (25 / 100.0);
+//    Console.Write($"Result: {price1} ");
+//    Console.ResetColor();
+//}
+//else
+//{
+//    Console.ForegroundColor= ConsoleColor.Red;
+//    Console.WriteLine("No discount");
+//    Console.ResetColor();
+//}
+//Console.Write("Enter you rating:");
+//int rating = int.Parse(Console.ReadLine());
+
+//if (rating == 1)
+//{
+//    Console.WriteLine("badly");
+//}
+//if(rating == 2)
+//{
+// Console.WriteLine("satisfactorily");
+//}
+//if (rating ==3)
+//{
+// Console.WriteLine("satisfactorily");
+//}
+//if (rating == 4)
+//{
+// Console.WriteLine("good");
+//}
+//if (rating == 5)
+//{
+// Console.WriteLine("good");
+//}
+Console.Write("choose currency (1-3):");
+int currency = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter GRN:");
+int GRN = int.Parse(Console.ReadLine());
+
+switch (currency)
 {
-    Console.ForegroundColor= ConsoleColor.Green;
-    Console.WriteLine("Discounted price:10%");
-    double price1 = price - price * (10 / 100.0);
-    Console.Write($"Result: {price1} ");
-   Console.ResetColor();
+    case 1: Console.WriteLine($"Result: {GRN / 41.14}"); break;
+    case 2: Console.WriteLine($"Result: {GRN / 48}"); break;
+    case 3: Console.WriteLine($"Result: {GRN / 10.74}"); break;
+      default: Console.WriteLine("no"); break;
 }
-if (price >= 5000)
-{
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Discounted price:25%");
-    double price1 = price - price * (25 / 100.0);
-    Console.Write($"Result: {price1} ");
-    Console.ResetColor();
-}
-else
-{
-    Console.ForegroundColor= ConsoleColor.Red;
-    Console.WriteLine("No discount");
-    Console.ResetColor();
-}
+
+
