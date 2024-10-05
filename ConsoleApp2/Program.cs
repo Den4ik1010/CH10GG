@@ -114,5 +114,12 @@
 //    case 3: Console.WriteLine($"Result: {GRN / 10.74}"); break;
 //    default: Console.WriteLine("no"); break;
 //}
+Console.Write("length (number):");
+int length = int.Parse(Console.ReadLine());
+
+for (int count = 0; count < length; count++)
+{
+    Console.Write("#");
+}
 
 
