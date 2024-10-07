@@ -114,12 +114,39 @@
 //    case 3: Console.WriteLine($"Result: {GRN / 10.74}"); break;
 //    default: Console.WriteLine("no"); break;
 //}
-Console.Write("length (number):");
-int length = int.Parse(Console.ReadLine());
+//Console.Write("length (number):");
+//int length = int.Parse(Console.ReadLine());
 
-for (int count = 0; count < length; count++)
+//for (int count = 0; count < length; count++)
+//{
+//    Console.Write("#");
+//}
+
+Console.Write("Enter width: ");
+int width = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter height: ");
+int height = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Enter symbols:");
+char symbols = char.Parse(Console.ReadLine());
+
+Console.Write("choose a collar from 1 to 3: 1-ed 2-green 3-blue");
+int color =int.Parse(Console.ReadLine());
+
+switch(color)
 {
-    Console.Write("#");
+    case 1: Console.ForegroundColor= ConsoleColor.Red; break;
+
+    case 2: Console.ForegroundColor = ConsoleColor.Blue; break;
+
+    case 3: Console.ForegroundColor = ConsoleColor.Yellow; break;
 }
 
+
+for (int i = 0; i < height; i++)
+{
+
+    Console.WriteLine(new string(symbols, width));
+}
 
